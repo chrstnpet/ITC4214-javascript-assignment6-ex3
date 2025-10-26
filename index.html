@@ -8,8 +8,25 @@
         <title>Home</title>
 
         <script src="./script.js" defer></script>
+
+        <style>
+            h1, p {
+                margin-top: 10px;
+            }
+        </style>
     </head>
     <body>
+        <h1>Hello!</h1>
 
+        <label for="input-text">Please type your name:</label>
+        <input type="text" id="input-text" onfocus="this.value=''">
+
+        <button id="submit"
+            onclick="orderNames(document.querySelector('#input-text').value)">
+            Add/Enter
+        </button>
+        <div id="results">
+            <p></p>
+        </div>
     </body>
 </html>
